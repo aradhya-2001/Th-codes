@@ -1,8 +1,11 @@
-Ques- Leet 560
+/* Ques- Leet 560
 
 naive brute force is of Generating all sub arrays is like subsequence of string (copy 1) O(n^3).
 
-Optimised brute force is below one O(n^2) :-
+Optimised brute force is below one O(n^2) :- */
+
+#include<bits/stdc++.h>
+using namespace std;
 
 int subarraySum(vector<int>& arr, int k) 
 {
@@ -21,7 +24,7 @@ int subarraySum(vector<int>& arr, int k)
     return ans; 
 }
 
-or :-
+// or :-
 
 int subarraySum(vector<int>& arr, int k) 
 {

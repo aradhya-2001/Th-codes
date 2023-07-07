@@ -1,9 +1,8 @@
-/* Suppose there are n boxes and r itmes.You are required to place the items in those boxes and print all such configurations possible.
-Items are numbered from 1 to r.Number of boxes can be greater number of items, hence some of the boxes may remain empty. */
-
 #include<bits/stdc++.h>
 using namespace std;
 
+/* Suppose there are n boxes and r itmes.You are required to place the items in those boxes and print all such configurations possible.
+Items are numbered from 1 to r.Number of boxes can be greater number of items, hence some of the boxes may remain empty. */
 void perm(int* boxes, int curr, int& r, int& n)
 {
     if(curr > r) // total n! 

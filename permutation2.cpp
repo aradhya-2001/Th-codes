@@ -31,3 +31,16 @@ int main()
     vector<bool> vis(n, 0);
     perm(1, 0, "", r, n, vis);
 }
+
+/* O/P -> 0 1 2
+          0 2 1
+          1 0 2
+          1 2 0
+          2 0 1
+          2 1 0 */
+
+/* 2^n = ⁿC₀ + ⁿC₁ + ⁿC₂ + ... + ⁿCₙ
+
+The above formula means: In code, func is calling itself 2 times which causes 2^n TC.
+But also 2^n = sum of all posible combinations of n. 
+So our code will generate all combinations of n and we will print only the ones we want i.e. where ri==r. */
